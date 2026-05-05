@@ -1,13 +1,20 @@
 package org.example.affaci.Models.Enum;
 
+import com.fasterxml.jackson.annotation.JsonValue;
+
 public enum Unit {
-    g("Грамм"),
-    mg("Миллиграмм"),
-    µg("Микрограмм"),
-    IU("Международная единица"),
-    kcal("Ккал");
-
-
+    g("г"),
+    mg("мг"),
+    µg("мкг"),
+    IU("МЕ"),
+    kcal("ккал"),
+    GRAM("г"),
+    MILLILITER("мл"),
+    KILOGRAM("кг"),
+    LITER("л"),
+    PIECE("шт"),
+    TEASPOON("ч.л"),
+    TABLESPOON("ст.л");
 
     private final String name;
 
@@ -15,7 +22,7 @@ public enum Unit {
         this.name = name;
     }
 
-
+    @JsonValue
     public String getName() {
         return name;
     }

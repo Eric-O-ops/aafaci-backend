@@ -1,0 +1,5 @@
+2026-05-03 00:30:08.748 INFO  o.s.b.w.e.tomcat.GracefulShutdown — Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-03 00:30:08.751 INFO  o.s.b.w.e.tomcat.GracefulShutdown — Graceful shutdown complete
+2026-05-03 00:30:08.753 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean — Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-03 00:30:08.754 INFO  com.zaxxer.hikari.HikariDataSource — HikariPool-1 - Shutdown initiated...
+2026-05-03 00:30:08.755 INFO  com.zaxxer.hikari.HikariDataSource — HikariPool-1 - Shutdown completed.

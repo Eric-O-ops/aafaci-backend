@@ -28,6 +28,8 @@ public interface ProductsRepository
 
     List<Products> findByNameContainingIgnoreCase(String name);
 
+    Optional<Products> findByNameIgnoreCase(String name);
+
     List<Products> findAllByRegionId(UUID id);
     List<Products> findAllByCategoriesId(UUID id);
 

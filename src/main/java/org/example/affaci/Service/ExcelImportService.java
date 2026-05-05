@@ -126,7 +126,7 @@ public class ExcelImportService {
                         }
 
                         chemical_composition.setProduct(product);
-                        chemical_composition.setUnit(Unit.g);
+                        chemical_composition.setUnit(Unit.GRAM);
                         product.getChemicalCompositions().add(chemical_composition);
                     }
 
@@ -160,7 +160,7 @@ public class ExcelImportService {
                         }
 
                         aminoAcidComposition.setProduct(product);
-                        aminoAcidComposition.setUnit(Unit.g);
+                        aminoAcidComposition.setUnit(Unit.GRAM);
                         product.getAminoAcidCompositions().add(aminoAcidComposition);
                     }
 
@@ -197,7 +197,7 @@ public class ExcelImportService {
                         }
 
                         mineralComposition.setProduct(product);
-                        mineralComposition.setUnit(Unit.g);
+                        mineralComposition.setUnit(Unit.GRAM);
                         product.getMineralCompositions().add(mineralComposition);
                     }
 
@@ -234,7 +234,7 @@ public class ExcelImportService {
                         }
 
                         fattyAcidComposition.setProduct(product);
-                        fattyAcidComposition.setUnit(Unit.g);
+                        fattyAcidComposition.setUnit(Unit.GRAM);
                         product.getFattyAcidCompositions().add(fattyAcidComposition);
                     }
 
