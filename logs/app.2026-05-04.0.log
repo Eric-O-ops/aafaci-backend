@@ -1,0 +1,161 @@
+2026-05-04 17:53:15.010 INFO  o.example.affaci.AffaciApplication — Starting AffaciApplication using Java 17.0.17 with PID 82540 (/Users/erikomaraliev/IdeaProjects/afaci_back/target/classes started by erikomaraliev in /Users/erikomaraliev/IdeaProjects/afaci_back)
+2026-05-04 17:53:15.011 INFO  o.example.affaci.AffaciApplication — No active profile set, falling back to 1 default profile: "default"
+2026-05-04 17:53:15.310 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-04 17:53:15.310 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2026-05-04 17:53:15.321 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.CategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:15.321 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.ProductTranslateRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:15.322 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.ProductsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:15.322 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.RegionsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:15.322 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.SessionRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:15.323 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.UserRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:15.323 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.photoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:15.323 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2026-05-04 17:53:15.327 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-04 17:53:15.327 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04 17:53:15.338 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Finished Spring Data repository scanning in 9 ms. Found 7 JPA repository interfaces.
+2026-05-04 17:53:15.431 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker — Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-05-04 17:53:15.437 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping — Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2026-05-04 17:53:15.507 INFO  o.s.b.w.e.tomcat.TomcatWebServer — Tomcat initialized with port 9876 (http)
+2026-05-04 17:53:15.511 INFO  o.a.catalina.core.StandardService — Starting service [Tomcat]
+2026-05-04 17:53:15.511 INFO  o.a.catalina.core.StandardEngine — Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-05-04 17:53:15.535 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] — Initializing Spring embedded WebApplicationContext
+2026-05-04 17:53:15.535 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext — Root WebApplicationContext: initialization completed in 512 ms
+2026-05-04 17:53:15.601 INFO  o.h.jpa.internal.util.LogHelper — HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-04 17:53:15.633 INFO  org.hibernate.Version — HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-05-04 17:53:15.647 INFO  o.h.c.i.RegionFactoryInitiator — HHH000026: Second-level cache disabled
+2026-05-04 17:53:15.746 INFO  o.s.o.j.p.SpringPersistenceUnitInfo — No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-04 17:53:15.760 INFO  com.zaxxer.hikari.HikariDataSource — HikariPool-1 - Starting...
+2026-05-04 17:53:15.797 INFO  com.zaxxer.hikari.pool.HikariPool — HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@41bdaa81
+2026-05-04 17:53:15.798 INFO  com.zaxxer.hikari.HikariDataSource — HikariPool-1 - Start completed.
+2026-05-04 17:53:15.817 WARN  org.hibernate.orm.deprecation — HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-04 17:53:15.824 INFO  o.hibernate.orm.connections.pooling — HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.14
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-04 17:53:16.224 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator — HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-04 17:53:16.625 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean — Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 17:53:16.843 INFO  o.s.d.j.r.query.QueryEnhancerFactory — Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-04 17:53:17.190 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration — spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-04 17:53:17.291 INFO  o.s.v.b.OptionalValidatorFactoryBean — Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-04 17:53:17.316 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration — Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-05-04 17:53:17.411 INFO  o.s.b.w.e.tomcat.TomcatWebServer — Tomcat started on port 9876 (http) with context path '/'
+2026-05-04 17:53:17.416 INFO  o.example.affaci.AffaciApplication — Started AffaciApplication in 2.582 seconds (process running for 2.799)
+2026-05-04 17:53:17.443 INFO  o.s.b.a.l.ConditionEvaluationReportLogger — 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-05-04 17:53:17.450 ERROR o.s.boot.SpringApplication — Application run failed
+java.lang.IllegalStateException: Failed to execute ApplicationRunner
+	at org.springframework.boot.SpringApplication.lambda$callRunner$6(SpringApplication.java:795)
+	at org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:66)
+	at org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796)
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784)
+	at org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at org.example.affaci.AffaciApplication.main(AffaciApplication.java:10)
+Caused by: java.net.ConnectException: Failed to connect to /127.0.0.1:9000
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:297)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.kt:207)
+	at okhttp3.internal.connection.ExchangeFinder.findConnection(ExchangeFinder.kt:226)
+	at okhttp3.internal.connection.ExchangeFinder.findHealthyConnection(ExchangeFinder.kt:106)
+	at okhttp3.internal.connection.ExchangeFinder.find(ExchangeFinder.kt:74)
+	at okhttp3.internal.connection.RealCall.initExchange$okhttp(RealCall.kt:255)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:32)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall$AsyncCall.run(RealCall.kt:517)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+Caused by: java.net.ConnectException: Connection refused
+	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:554)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:602)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:633)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.kt:128)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.kt:295)
+	... 18 common frames omitted
+2026-05-04 17:53:17.452 INFO  o.s.b.w.e.tomcat.GracefulShutdown — Commencing graceful shutdown. Waiting for active requests to complete
+2026-05-04 17:53:17.453 INFO  o.s.b.w.e.tomcat.GracefulShutdown — Graceful shutdown complete
+2026-05-04 17:53:17.455 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean — Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 17:53:17.456 INFO  com.zaxxer.hikari.HikariDataSource — HikariPool-1 - Shutdown initiated...
+2026-05-04 17:53:17.457 INFO  com.zaxxer.hikari.HikariDataSource — HikariPool-1 - Shutdown completed.
+2026-05-04 17:53:56.198 INFO  o.example.affaci.AffaciApplication — Starting AffaciApplication using Java 17.0.17 with PID 82656 (/Users/erikomaraliev/IdeaProjects/afaci_back/target/classes started by erikomaraliev in /Users/erikomaraliev/IdeaProjects/afaci_back)
+2026-05-04 17:53:56.198 INFO  o.example.affaci.AffaciApplication — No active profile set, falling back to 1 default profile: "default"
+2026-05-04 17:53:56.489 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-04 17:53:56.489 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2026-05-04 17:53:56.500 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.CategoriesRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:56.501 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.ProductTranslateRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:56.501 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.ProductsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:56.502 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.RegionsRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:56.502 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.SessionRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:56.502 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.UserRepo; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:56.503 INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport — Spring Data JDBC - Could not safely identify store assignment for repository candidate interface org.example.affaci.Repo.photoRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-05-04 17:53:56.503 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2026-05-04 17:53:56.507 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Multiple Spring Data modules found, entering strict repository configuration mode
+2026-05-04 17:53:56.507 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-04 17:53:56.519 INFO  o.s.d.r.c.RepositoryConfigurationDelegate — Finished Spring Data repository scanning in 10 ms. Found 7 JPA repository interfaces.
+2026-05-04 17:53:56.612 WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker — Bean 'org.springframework.ws.config.annotation.DelegatingWsConfiguration' of type [org.springframework.ws.config.annotation.DelegatingWsConfiguration$$SpringCGLIB$$0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [annotationActionEndpointMapping] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2026-05-04 17:53:56.619 INFO  o.s.w.s.a.s.AnnotationActionEndpointMapping — Supporting [WS-Addressing August 2004, WS-Addressing 1.0]
+2026-05-04 17:53:56.690 INFO  o.s.b.w.e.tomcat.TomcatWebServer — Tomcat initialized with port 9876 (http)
+2026-05-04 17:53:56.694 INFO  o.a.catalina.core.StandardService — Starting service [Tomcat]
+2026-05-04 17:53:56.695 INFO  o.a.catalina.core.StandardEngine — Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-05-04 17:53:56.717 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] — Initializing Spring embedded WebApplicationContext
+2026-05-04 17:53:56.718 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext — Root WebApplicationContext: initialization completed in 507 ms
+2026-05-04 17:53:56.782 INFO  o.h.jpa.internal.util.LogHelper — HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-04 17:53:56.813 INFO  org.hibernate.Version — HHH000412: Hibernate ORM core version 6.6.5.Final
+2026-05-04 17:53:56.826 INFO  o.h.c.i.RegionFactoryInitiator — HHH000026: Second-level cache disabled
+2026-05-04 17:53:56.928 INFO  o.s.o.j.p.SpringPersistenceUnitInfo — No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-04 17:53:56.941 INFO  com.zaxxer.hikari.HikariDataSource — HikariPool-1 - Starting...
+2026-05-04 17:53:56.976 INFO  com.zaxxer.hikari.pool.HikariPool — HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@2ebf524
+2026-05-04 17:53:56.976 INFO  com.zaxxer.hikari.HikariDataSource — HikariPool-1 - Start completed.
+2026-05-04 17:53:56.989 WARN  org.hibernate.orm.deprecation — HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-04 17:53:56.995 INFO  o.hibernate.orm.connections.pooling — HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 15.14
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-05-04 17:53:57.400 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator — HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-04 17:53:57.787 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean — Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-04 17:53:58.005 INFO  o.s.d.j.r.query.QueryEnhancerFactory — Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-04 17:53:58.358 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration — spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-04 17:53:58.463 INFO  o.s.v.b.OptionalValidatorFactoryBean — Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Bean Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+2026-05-04 17:53:58.488 WARN  o.s.b.a.t.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration — Cannot find template location: classpath:/templates/ (please add some templates, check your Thymeleaf configuration, or set spring.thymeleaf.check-template-location=false)
+2026-05-04 17:53:58.582 INFO  o.s.b.w.e.tomcat.TomcatWebServer — Tomcat started on port 9876 (http) with context path '/'
+2026-05-04 17:53:58.586 INFO  o.example.affaci.AffaciApplication — Started AffaciApplication in 2.559 seconds (process running for 2.785)
+2026-05-04 17:56:42.114 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] — Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-04 17:56:42.115 INFO  o.s.web.servlet.DispatcherServlet — Initializing Servlet 'dispatcherServlet'
+2026-05-04 17:56:42.116 INFO  o.s.web.servlet.DispatcherServlet — Completed initialization in 1 ms
+2026-05-04 17:58:00.029 WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier — Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2026-05-04 18:16:44.377 WARN  com.zaxxer.hikari.pool.HikariPool — HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m47s352ms).
+2026-05-04 18:33:10.276 WARN  com.zaxxer.hikari.pool.HikariPool — HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=15m55s868ms).
+2026-05-04 23:31:45.459 WARN  com.zaxxer.hikari.pool.HikariPool — HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m2s865ms).
