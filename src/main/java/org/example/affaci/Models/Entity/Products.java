@@ -58,6 +58,9 @@ public class Products {
     List<Fatty_acid_composition> fattyAcidCompositions = new ArrayList<>();
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    List<Vitamin_composition> vitaminCompositions = new ArrayList<>();
+
+    @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
     List<photo> photos = new ArrayList<>();
 
     @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)

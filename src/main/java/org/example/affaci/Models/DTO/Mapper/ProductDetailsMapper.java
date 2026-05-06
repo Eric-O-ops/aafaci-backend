@@ -1,11 +1,8 @@
 package org.example.affaci.Models.DTO.Mapper;
 
 
-import org.apache.commons.math3.stat.descriptive.summary.Product;
 import org.example.affaci.Models.DTO.DetailProductResponseDTO;
-import org.example.affaci.Models.Entity.Chemical_composition;
-import org.example.affaci.Models.Entity.Mineral_composition;
-import org.example.affaci.Models.Entity.Products;
+import org.example.affaci.Models.Entity.*;
 import org.example.affaci.Models.Enum.Language;
 import org.example.affaci.Models.Enum.Mineral;
 import org.springframework.stereotype.Component;
@@ -49,6 +46,38 @@ public class ProductDetailsMapper {
                         .map(this::toMineralDto)
                         .collect(Collectors.toList())
         );
+
+        if (p.getVitaminCompositions() != null) {
+            dto.setVitaminComposition(
+                    p.getVitaminCompositions().stream()
+                            .map(this::toVitaminDto)
+                            .collect(Collectors.toList())
+            );
+        }
+
+        if (p.getFattyAcidCompositions() != null) {
+            dto.setFattyAcidComposition(
+                    p.getFattyAcidCompositions().stream()
+                            .filter(f -> !"Соотношения аминокислот".equals(f.getType_of_fatty_acid()))
+                            .map(this::toFattyAcidDto)
+                            .collect(Collectors.toList())
+            );
+            dto.setAminoAcidRatios(
+                    p.getFattyAcidCompositions().stream()
+                            .filter(f -> "Соотношения аминокислот".equals(f.getType_of_fatty_acid()))
+                            .map(this::toAminoAcidRatioDto)
+                            .collect(Collectors.toList())
+            );
+        }
+
+        if (p.getAminoAcidCompositions() != null) {
+            dto.setAminoAcidComposition(
+                    p.getAminoAcidCompositions().stream()
+                            .map(this::toAminoAcidDto)
+                            .collect(Collectors.toList())
+            );
+        }
+
         return dto;
     }
 
@@ -59,6 +88,7 @@ public class ProductDetailsMapper {
         dto.setCompoundName(chem.getCompound_name());
         dto.setCompoundCategory(chem.getCompound_category());
         dto.setQuantity(chem.getQuantity());
+        dto.setError(chem.getError());
         dto.setUnit(chem.getUnit());
         return dto;
     }
@@ -68,7 +98,50 @@ public class ProductDetailsMapper {
         dto.setId(m.getId());
         dto.setMineral(m.getMineral_name().getName());
         dto.setQuantity(m.getQuantity());
+        dto.setError(m.getError());
         dto.setUnit(m.getUnit());
+        return dto;
+    }
+
+    private DetailProductResponseDTO.VitaminDTO toVitaminDto(Vitamin_composition v){
+        DetailProductResponseDTO.VitaminDTO dto = new DetailProductResponseDTO.VitaminDTO();
+        dto.setId(v.getId());
+        dto.setVitaminName(v.getVitamin_name());
+        dto.setVitaminGroup(v.getVitamin_group());
+        dto.setQuantity(v.getQuantity());
+        dto.setError(v.getError());
+        dto.setUnit(v.getUnit());
+        return dto;
+    }
+
+    private DetailProductResponseDTO.FattyAcidDTO toFattyAcidDto(Fatty_acid_composition f){
+        DetailProductResponseDTO.FattyAcidDTO dto = new DetailProductResponseDTO.FattyAcidDTO();
+        dto.setId(f.getId());
+        dto.setFattyAcidName(f.getFatty_acid_name());
+        dto.setTypeOfFattyAcid(f.getType_of_fatty_acid());
+        dto.setQuantity(f.getQuantity());
+        dto.setError(f.getError());
+        dto.setUnit(f.getUnit());
+        return dto;
+    }
+
+    private DetailProductResponseDTO.AminoAcidDTO toAminoAcidDto(Amino_acid_composition a){
+        DetailProductResponseDTO.AminoAcidDTO dto = new DetailProductResponseDTO.AminoAcidDTO();
+        dto.setId(a.getId());
+        dto.setAminoAcidName(a.getAmino_acid_name());
+        dto.setQuantity(a.getQuantity());
+        dto.setError(a.getError());
+        dto.setUnit(a.getUnit());
+        return dto;
+    }
+
+    private DetailProductResponseDTO.AminoAcidRatioDTO toAminoAcidRatioDto(Fatty_acid_composition f){
+        DetailProductResponseDTO.AminoAcidRatioDTO dto = new DetailProductResponseDTO.AminoAcidRatioDTO();
+        dto.setId(f.getId());
+        dto.setRatioName(f.getFatty_acid_name());
+        dto.setQuantity(f.getQuantity());
+        dto.setError(f.getError());
+        dto.setUnit(f.getUnit());
         return dto;
     }
 }

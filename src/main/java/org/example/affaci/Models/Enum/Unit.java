@@ -8,6 +8,8 @@ public enum Unit {
     µg("мкг"),
     IU("МЕ"),
     kcal("ккал"),
+    kJ("кДж"),
+    PERCENT("%"),
     GRAM("г"),
     MILLILITER("мл"),
     KILOGRAM("кг"),

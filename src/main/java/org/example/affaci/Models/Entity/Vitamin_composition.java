@@ -21,15 +21,15 @@ public class Vitamin_composition {
     @UuidGenerator
     UUID id;
 
-    @OneToOne
-    @JoinColumn(name = "products_id")
+    @ManyToOne
+    @JoinColumn(name = "product_id", nullable = false)
     Products product;
 
-
-    String vitamit_name;            //название витамина (например, Vitamin A, Vitamin C)
-    String vitamit_group;           //группа витаминов (например, жирорастворимые, водорастворимые)
-    Double quantity;                //Количество
-    Double error;                   //Погрешность
+    String vitamin_name;
+    String vitamin_group;
+    Double quantity;
+    Double error;
     @Enumerated(EnumType.STRING)
-    Unit unit;                      //Единица измерения
+    @Column(name = "unit", columnDefinition = "VARCHAR(255)")
+    Unit unit;
 }
