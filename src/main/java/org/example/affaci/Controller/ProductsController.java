@@ -1,6 +1,7 @@
 package org.example.affaci.Controller;
 
 
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.example.affaci.Models.DTO.DetailProductResponseDTO;
 import org.example.affaci.Models.DTO.Mapper.ProductsMapper;
@@ -50,9 +51,13 @@ public class ProductsController {
 
 
     @GetMapping("/details/{id}")
-    public ResponseEntity<DetailProductResponseDTO> getProduct(@PathVariable UUID id,
-                                                               @RequestParam(defaultValue = "ru")String lng) {
-        return ResponseEntity.ok(productsService.getProductById(id, lng));
+    public ResponseEntity<?> getProduct(@PathVariable UUID id,
+                                                                @RequestParam(defaultValue = "ru")String lng) {
+        try {
+            return ResponseEntity.ok(productsService.getProductById(id, lng));
+        } catch (EntityNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Продукт не найден: " + e.getMessage());
+        }
     }
 
 

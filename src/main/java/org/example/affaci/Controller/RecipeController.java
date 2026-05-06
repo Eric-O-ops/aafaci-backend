@@ -32,7 +32,10 @@ public class RecipeController {
     // Получить все ингредиенты для блюда
     @GetMapping("/{recipeId}")
     public ResponseEntity<RecipeResponse> getIngredients(@PathVariable UUID recipeId) {
-        Products dish = productsRepository.findById(recipeId).orElseThrow();
+        Products dish = productsRepository.findById(recipeId).orElse(null);
+        if (dish == null) {
+            return ResponseEntity.ok(new RecipeResponse("Продукт не найден", List.of()));
+        }
         List<RecipeDTO> ingredients = dishIngredientService.getIngredientsByDishId(recipeId);
         return ResponseEntity.ok(new RecipeResponse(dish.getName(), ingredients));
     }
