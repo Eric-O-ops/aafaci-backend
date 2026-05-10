@@ -24,7 +24,7 @@ public class DetailProductResponseDTO {
     List<VitaminDTO> vitaminComposition;
     List<FattyAcidDTO> fattyAcidComposition;
     List<AminoAcidDTO> aminoAcidComposition;
-    List<AminoAcidRatioDTO> aminoAcidRatios;
+    List<FattyAcidMethylEsterRatioDTO> fattyAcidMethylEsterRatios;
 
 
     @AllArgsConstructor
@@ -99,7 +99,7 @@ public class DetailProductResponseDTO {
     @Getter
     @Setter
     @FieldDefaults(level = AccessLevel.PRIVATE)
-    public static class AminoAcidRatioDTO{
+    public static class FattyAcidMethylEsterRatioDTO{
         private UUID id;
         private String ratioName;
         private Double quantity;

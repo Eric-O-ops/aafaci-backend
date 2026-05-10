@@ -58,14 +58,14 @@ public class ProductDetailsMapper {
         if (p.getFattyAcidCompositions() != null) {
             dto.setFattyAcidComposition(
                     p.getFattyAcidCompositions().stream()
-                            .filter(f -> !"Соотношения аминокислот".equals(f.getType_of_fatty_acid()))
+                            .filter(f -> !"Соотношения метиловых эфиров жирных кислот молочного жира".equals(f.getType_of_fatty_acid()))
                             .map(this::toFattyAcidDto)
                             .collect(Collectors.toList())
             );
-            dto.setAminoAcidRatios(
+            dto.setFattyAcidMethylEsterRatios(
                     p.getFattyAcidCompositions().stream()
-                            .filter(f -> "Соотношения аминокислот".equals(f.getType_of_fatty_acid()))
-                            .map(this::toAminoAcidRatioDto)
+                            .filter(f -> "Соотношения метиловых эфиров жирных кислот молочного жира".equals(f.getType_of_fatty_acid()))
+                            .map(this::toFattyAcidMethylEsterRatioDto)
                             .collect(Collectors.toList())
             );
         }
@@ -135,8 +135,8 @@ public class ProductDetailsMapper {
         return dto;
     }
 
-    private DetailProductResponseDTO.AminoAcidRatioDTO toAminoAcidRatioDto(Fatty_acid_composition f){
-        DetailProductResponseDTO.AminoAcidRatioDTO dto = new DetailProductResponseDTO.AminoAcidRatioDTO();
+    private DetailProductResponseDTO.FattyAcidMethylEsterRatioDTO toFattyAcidMethylEsterRatioDto(Fatty_acid_composition f){
+        DetailProductResponseDTO.FattyAcidMethylEsterRatioDTO dto = new DetailProductResponseDTO.FattyAcidMethylEsterRatioDTO();
         dto.setId(f.getId());
         dto.setRatioName(f.getFatty_acid_name());
         dto.setQuantity(f.getQuantity());

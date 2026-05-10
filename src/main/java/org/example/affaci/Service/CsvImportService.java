@@ -138,7 +138,7 @@ public class CsvImportService {
             case "Мононенасыщенные ЖК" -> handleFattyAcidComposition(product, component, value, error, unit, "Мононенасыщенные ЖК");
             case "Полиненасыщенные ЖК" -> handleFattyAcidComposition(product, component, value, error, unit, "Полиненасыщенные ЖК");
             case "Аминокислотный состав" -> handleAminoAcidComposition(product, component, value, error, unit);
-            case "Соотношения аминокислот" -> handleFattyAcidComposition(product, component, value, error, unit, "Соотношения аминокислот");
+            case "Соотношения метиловых эфиров жирных кислот молочного жира" -> handleFattyAcidComposition(product, component, value, error, unit, "Соотношения метиловых эфиров жирных кислот молочного жира");
             default -> log.warn("Неизвестный тип показателя: {}", indicatorType);
         }
     }
